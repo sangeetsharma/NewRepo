@@ -1,42 +1,64 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="COMP_229_Assignment1_300866025._Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="contnt_page_Default" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+        <div class="inside">
+         <h2>Contact Me</h2>
 
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
+     </div>
+        <div  id="contacts-form">
+ 
+        
+              <div class="field59">
+                  <asp:Label ID="lblEmail" runat="server" Text="EMAIL: " ForeColor="#ff0000"></asp:Label>
+              <label1>
+                  
+               <asp:Label ID="lblActaulEmail" runat="server" Text="sangeet@gmail.com " ></asp:Label></label1>
+            </div>
+               <div class="field59">
+                   <asp:Label ID="lblContactNumber" runat="server" Text="TELEPHONE: " ForeColor="#ff0000"></asp:Label>
+              <label1>
+                  <asp:Label ID="lblContact" runat="server" Text="8367687689"></asp:Label></label1>
+                
+            </div>
 
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
+            <div class="field59">
+                 <asp:Label ID="lblAddress" runat="server" Text="ADDRESS: " ForeColor="#ff0000"></asp:Label>
+                  <label1>
+              <asp:Label ID="lblAddress1" runat="server" Text="Combadi Ltd.1 Kings Avenue Canada"></asp:Label>
+                      </label1>
+               
+            </div>
+          
+
+
+            <div class="field60">
+                <label>
+                 <asp:Label ID="lblUserName" runat="server" Text="Name: "></asp:Label></label>
+                <asp:TextBox ID="txtUserName" runat="server" Text="User Name"></asp:TextBox>
+             
+              
+            </div>
+            
+            <div class="field61">
+                <label>
+                 <asp:Label ID="lblUserEmail" runat="server" Text="Email: "></asp:Label></label>
+                <asp:TextBox ID="txtUSerEmail" runat="server" Text="Email"></asp:TextBox>
+             
+              
+            </div>
+
+                 <div class="field61">
+                <label>
+                 <asp:Label ID="lblMessage" runat="server" Text="Message*: "></asp:Label></label>
+                <asp:TextBox ID="txtMessage" runat="server" Text="Message" TextMode="MultiLine"></asp:TextBox>
+             
+             
+            </div>
+       <div class="field62">
+                    <asp:Button ID="Button2" runat="server" Text="Submit" ForeColor="Green" OnClick="Button2_Click" /></div>
+
         </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
-
+           
+            </div>
 </asp:Content>
+
